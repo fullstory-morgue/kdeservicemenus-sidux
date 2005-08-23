@@ -1,0 +1,9 @@
+[Desktop Entry]
+ServiceTypes=all/allfiles
+Actions=mailit
+
+[Desktop Action mailit]
+Name=Send file per mail
+Name[de]=Datei per Email verschicken
+Icon=kmail
+Exec=kmail --attach %u

@@ -1,0 +1,20 @@
+Source: kdeservicemenus-kanotix
+Section: kde
+Priority: optional
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Build-Depends-Indep: cdbs (>= 0.4.23-1.1), build-essential, debhelper (>= 4.1.0)
+Standards-Version: 3.6.2
+
+Package: kdeservicemenus-kanotix
+Architecture: all
+Depends: libjpeg-progs, imagemagick, zip, dialog, xdialog, kanotix-su
+Suggests: kde, kmail, konqueror, kate
+Provides: kdeservicemenus-knoppix
+Conflicts: kdeservicemenus-knoppix
+Description: several kde service menus
+ Until now included: 
+ Edit as root,
+ Rotate CC/CCW, Flip/Flop (JPG/PNG/GIF),
+ Zip files/zip and email and email one file.
+ JPG is lossless modified, thx to libjpeg-progs.
+ Note: For email support you need to have kmail installed.

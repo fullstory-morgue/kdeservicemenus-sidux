@@ -1,0 +1,6 @@
+#!/bin/bash
+
+FILE="$1"
+shift
+
+jpegtran "$@" -copy all -outfile $FILE.tmp$$ $FILE && mv -f $FILE.tmp$$ $FILE

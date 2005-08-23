@@ -1,0 +1,59 @@
+kdeservicemenus-kanotix (0.3.1) unstable; urgency=low
+
+  * overhaul packaging.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Aug 2005 16:06:24 +0200
+
+kdeservicemenus-kanotix (0.3) unstable; urgency=low
+
+  * add "edit as root".
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Mar 2005 14:49:19 +0100
+
+kdeservicemenus-kanotix (0.2-1) unstable; urgency=low
+
+  * Fork for Kanotix XDG compatibilty.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 12 Dec 2004 22:10:33 +0100
+
+kdeservicemenus-knoppix (0.2-1) unstable; urgency=low
+
+  * Fixed bug in rotate_jpg.desktop (missing "").
+
+ -- Fabian Franz <debian@fabian-franz.de>  Mon, 28 Jul 2003 16:39:19 +0200
+
+kdeservicemenus-knoppix (0.2-1) unstable; urgency=low
+
+  * Added two new servicemenus:
+  	* ZipIt with "Zip fil(es)" and "Zip and email"
+  	* Mail, which mails one file with kmail
+  * Fixed bug in rotate_jpg.desktop (missing "").
+
+ -- Fabian Franz <debian@fabian-franz.de>  Mon, 28 Jul 2003 16:39:19 +0200
+
+kdeservicemenus-knoppix (0.1-4) unstable; urgency=low
+
+  * Fixed some lintian issues.
+
+ -- Fabian Franz <debian@fabian-franz.de>  Sun, 20 Jul 2003 01:44:18 +0200
+
+kdeservicemenus-knoppix (0.1-3) unstable; urgency=low
+
+  * Fixed rotate_jpg.desktop
+
+  * Added wrapper as requested by Klaus.
+
+ -- Fabian Franz <knx-kdeservicemenus@fabian-franz.de>  Mon, 28 Apr 2003 14:18:31 +0200
+
+kdeservicemenus-knoppix (0.1-2) unstable; urgency=low
+
+  *  Fixed for-loops. (They are not needed, %u works as well)
+
+ -- Fabian Franz <knx-@fabian-franz.de>  Sun, 27 Apr 2003 01:10:15 +0200
+
+kdeservicemenus-knoppix (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Fabian Franz <knx-kdeservicemenus@fabian-franz.de>  Sat, 26 Apr 2003 14:52:05 +0200
+

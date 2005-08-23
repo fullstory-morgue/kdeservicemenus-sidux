@@ -1,0 +1,33 @@
+# Lossless JPG image rotation in the Konqueror context menu 
+# uses jpegtran which comes with Knoppix 
+# 
+# by probono 
+# GPL 
+#
+# Some Fixes by Fabian Franz <knx-kdeservicemenus@fabian-franz.de>
+
+[Desktop Entry] 
+ServiceTypes=image/jpg,image/jpeg 
+Actions=rotatejpgCCW;rotatejpgCW;flipjpghor;flipjpgver 
+
+[Desktop Action rotatejpgCCW] 
+Name=Rotate Counterclockwise 
+Name[de]=Gegen den Uhrzeigersinn rotieren 
+Icon=rotate_ccw 
+Exec=jpegtran-wrapper "%u" -rotate 270
+
+[Desktop Action rotatejpgCW] 
+Name=Rotate Clockwise 
+Name[de]=Im Uhrzeigersinn rotieren 
+Icon=rotate_cw 
+Exec=jpegtran-wrapper "%u" -rotate 90
+
+[Desktop Action flipjpghor] 
+Name=Flip Horizontal 
+Name[de]=Horizontal spiegeln
+Exec=jpegtran-wrapper "%u" -flip horizontal
+
+[Desktop Action flipjpgver] 
+Name=Flip Vertical 
+Name[de]=Vertikal spiegeln
+Exec=jpegtran-wrapper "%u" -flip vertical

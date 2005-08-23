@@ -1,0 +1,17 @@
+# GPL
+
+[Desktop Entry] 
+ServiceTypes=all/all
+Actions=zipit;zipmail
+
+[Desktop Action zipit] 
+Name=Zip file(s)
+Name[de]=Datei(en) komprimieren
+Icon=zip
+Exec=zipwrapper -zip "%U"
+
+[Desktop Action zipmail]
+Name=Zip and email file(s)
+Name[de]=Datei(en) komprimieren und verschicken
+Icon=kmail
+Exec=zipwrapper -mail "%U"

@@ -1,0 +1,2 @@
+*.desktop usr/share/apps/konqueror/servicemenus/
+bin/* usr/bin/
