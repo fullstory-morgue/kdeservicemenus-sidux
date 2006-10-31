@@ -25,7 +25,7 @@ case "$LANGUAGE" in
    de*|at*|ch*)
      TITLE_ZIP="Datei(en) komprimieren"
      TITLE_MAIL="Datei(en) komprimieren und verschicken"
-     M1='Dateiname $FILENAME existiert. Überschreiben?'
+     M1='Dateiname $FILENAME existiert. Ãœberschreiben?'
      M2='$FILENAME wurde angelegt.'
    ;;
    *)

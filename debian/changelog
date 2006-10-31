@@ -1,8 +1,9 @@
-kdeservicemenus-kanotix (0.3.3) UNRELEASED; urgency=low
+kdeservicemenus-kanotix (0.3.3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to utf-8.
+  * fix lintian errors.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 02:51:15 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed,  1 Nov 2006 00:38:16 +0100
 
 kdeservicemenus-kanotix (0.3.2) unstable; urgency=low
 
