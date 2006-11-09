@@ -1,3 +1,9 @@
+kdeservicemenus-kanotix (0.3.5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  9 Nov 2006 21:27:35 +0100
+
 kdeservicemenus-kanotix (0.3.4) unstable; urgency=low
 
   * fix i18n handling.
