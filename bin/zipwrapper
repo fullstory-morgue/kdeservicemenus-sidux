@@ -2,13 +2,13 @@
 
 FILENAME=""
 
+TMP="$(mktemp -p /tmp/ zipwrapper-XXXXXXXXXX)"
+DIRNAME=$(dirname $2)
+
 clean_exit()
 {
-  rm -f /tmp/zipwrapper.$$
+	rm -f "$TMP"
 }
-
-TMP=/tmp/zipwrapper.$$
-DIRNAME=$(dirname $2)
 
 trap "clean_exit" EXIT
 
@@ -18,52 +18,45 @@ MODUS="$1"
 shift
 
 # Internationalization
-
-[ -f /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
-
-case "$LANGUAGE" in
-   de*|at*|ch*)
-     TITLE_ZIP="Datei(en) komprimieren"
-     TITLE_MAIL="Datei(en) komprimieren und verschicken"
-     M1='Dateiname $FILENAME existiert. Überschreiben?'
-     M2='$FILENAME wurde angelegt.'
-   ;;
-   *)
-     TITLE_ZIP="Zip and email file(s)"
-     TITLE_MAIL="Zip and email file(s)"
-     M1='File $FILENAME exists. Overwrite ?'
-     M2='File $FILENAME was successfully created.'
-   ;;
+case "$LANG" in
+	de*|at*|ch*)
+		TITLE_ZIP="Datei(en) komprimieren"
+		TITLE_MAIL="Datei(en) komprimieren und verschicken"
+		M1='Dateiname $FILENAME existiert. Überschreiben?'
+		M2='$FILENAME wurde angelegt.'
+		;;
+	*)
+		TITLE_ZIP="Zip and email file(s)"
+		TITLE_MAIL="Zip and email file(s)"
+		M1='File $FILENAME exists. Overwrite ?'
+		M2='File $FILENAME was successfully created.'
+		;;
 esac
 
-TITLE=$TITLE_ZIP
+TITLE="$TITLE_ZIP"
 [ "$MODUS" = "-mail" ] && TITLE=$TITLE_MAIL
 
 # Try to guess possible filename, if there is just one file/directory to add.
-if [ "$#" -eq "1" -a ! -e "$1.zip" ] 
-then
-  FILENAME="$1.zip"
+if [ "$#" -eq "1" -a ! -e "$1.zip" ]; then
+	FILENAME="$1.zip"
 else
-  Xdialog --title "$TITLE" --fselect "$DIRNAME/" 0 0 2>$TMP
-  [ $? -ne 0 ] && exit
+	Xdialog --title "$TITLE" --fselect "$DIRNAME/" 0 0 2>$TMP
+	[ "$?" -ne 0 ] && exit
   
-  FILENAME=$(cat $TMP)
+	FILENAME="$(cat $TMP)"
 
-  if [ -r "$FILENAME" ]
-  then
-    Xdialog --title "$TITLE" --yesno "${M1/\$FILENAME/$FILENAME}" 0 0
-    [ $? -ne 0 ] && FILENAME=""
-  fi
+	if [ -r "$FILENAME" ]; then
+		Xdialog --title "$TITLE" --yesno "${M1/\$FILENAME/$FILENAME}" 0 0
+		[ "$?" -ne 0 ] && FILENAME=""
+	fi
 fi
 
-if [ -n "$FILENAME" ]
-then
-  [ -r "$FILENAME" ] && rm -f "$FILENAME"
-  zip -r $FILENAME "$@"
-  
-  if [ $? -eq 0 ]
-  then
-    [ "$MODUS" = "-zip" ] && Xdialog --title "$TITLE" --msgbox "${M2/\$FILENAME/$FILENAME}" 0 0
-    [ "$MODUS" = "-mail" ] && kmail --attach "$FILENAME"
-  fi
+if [ -n "$FILENAME" ]; then
+	[ -r "$FILENAME" ] && rm -f "$FILENAME"
+	zip -r $FILENAME "$@"
+	if [ "$?" -eq 0 ]; then
+		[ "$MODUS" = "-zip" ] && Xdialog --title "$TITLE" --msgbox "${M2/\$FILENAME/$FILENAME}" 0 0
+		[ "$MODUS" = "-mail" ] && kmail --attach "$FILENAME"
+	fi
 fi
+
