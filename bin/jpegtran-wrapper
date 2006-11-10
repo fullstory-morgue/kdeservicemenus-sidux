@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-FILE="$1"
-shift
+TMP="$(mktemp -p /tmp/ jpegtran-${1}-XXXXXXXXXX)"
+jpegtran "$@" -copy all -outfile "$TMP" "$1" && mv -f "$TMP" "$1"
 
-jpegtran "$@" -copy all -outfile $FILE.tmp$$ $FILE && mv -f $FILE.tmp$$ $FILE
