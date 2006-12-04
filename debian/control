@@ -1,13 +1,14 @@
-Source: kdeservicemenus-kanotix
+Source: kdeservicemenus-sidux
 Section: kde
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: cdbs (>= 0.4.23-1.1), debhelper (>= 5.0.0)
 Standards-Version: 3.7.2
 
-Package: kdeservicemenus-kanotix
+Package: kdeservicemenus-sidux
 Architecture: all
-Depends: libjpeg-progs, imagemagick, zip, dialog, xdialog, kanotix-su
+Depends: libjpeg-progs, imagemagick, zip, dialog, xdialog, su-me
+Conflicts: kdeservicemenus-kanotix
 Suggests: kde, kmail, konqueror, kate
 Description: several kde service menus
  Until now included: 

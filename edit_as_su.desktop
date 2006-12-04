@@ -9,4 +9,4 @@ Name[fr]=Editer en tant que Root
 Name[es]=Editar como Root
 Name[de]=Als root bearbeiten
 Icon=kfm
-Exec=kanotix-su "kwrite" "%U"
+Exec=su-me "kwrite" "%U"
