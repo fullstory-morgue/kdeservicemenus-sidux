@@ -1,3 +1,9 @@
+kdeservicemenus-sidux (0.3.9) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 30 Dec 2006 17:44:36 +0100
+
 kdeservicemenus-sidux (0.3.8) unstable; urgency=low
 
   * we need procps for kdeservices-sidux, not here.
