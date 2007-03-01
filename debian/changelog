@@ -1,3 +1,9 @@
+kdeservicemenus-sidux (0.3.10) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 17:16:45 +0100
+
 kdeservicemenus-sidux (0.3.9) unstable; urgency=low
 
   * kdeservicemenus-kanotix was never part of sidux or debian, don't conflict
