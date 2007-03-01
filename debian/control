@@ -8,7 +8,6 @@ Standards-Version: 3.7.2
 Package: kdeservicemenus-sidux
 Architecture: all
 Depends: libjpeg-progs, imagemagick, zip, dialog, xdialog, su-me
-Conflicts: kdeservicemenus-kanotix
 Suggests: kde, kmail, konqueror, kate
 Description: several kde service menus
  Until now included: 
