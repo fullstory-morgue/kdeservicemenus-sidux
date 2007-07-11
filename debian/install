@@ -1,2 +1,1 @@
-*.desktop usr/share/apps/konqueror/servicemenus/
-bin/* usr/bin/
+edit_as_su.desktop	usr/share/apps/konqueror/servicemenus/

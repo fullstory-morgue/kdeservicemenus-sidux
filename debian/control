@@ -1,18 +1,13 @@
 Source: kdeservicemenus-sidux
 Section: kde
-Priority: optional
+Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: cdbs, debhelper (>= 5)
 Standards-Version: 3.7.2
 
 Package: kdeservicemenus-sidux
 Architecture: all
-Depends: libjpeg-progs, imagemagick, zip, dialog, xdialog, su-me
-Suggests: kde, kmail, konqueror, kate
+Depends: su-me, kate
 Description: several kde service menus
  Until now included: 
- Edit as root,
- Rotate CC/CCW, Flip/Flop (JPG/PNG/GIF),
- Zip files/zip and email and email one file.
- JPG is lossless modified, thx to libjpeg-progs.
- Note: For email support you need to have kmail installed.
+ - Edit as root
