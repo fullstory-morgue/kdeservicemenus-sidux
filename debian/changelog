@@ -3,8 +3,9 @@ kdeservicemenus-sidux (0.3.11) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * remove obsolete components from source.
   * add VCS control headers.
+  * update syntax for Vcs headers in debian/control
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 11 Sep 2007 20:17:18 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 07 Oct 2007 14:44:18 +0200
 
 kdeservicemenus-sidux (0.3.10) unstable; urgency=low
 
