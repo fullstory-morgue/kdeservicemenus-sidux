@@ -1,3 +1,9 @@
+kdeservicemenus-sidux (0.3.12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 11 Oct 2007 00:36:39 +0200
+
 kdeservicemenus-sidux (0.3.11) unstable; urgency=low
 
   * remove obsolete components from source.
