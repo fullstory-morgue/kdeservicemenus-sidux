@@ -11,4 +11,4 @@ Name[fr]=Editer en tant que Root
 Name[es]=Editar como Root
 
 Icon=kfm
-Exec=su-me "kwrite" "%U"
+Exec=su-to-root -X -c /usr/bin/kate "%U"

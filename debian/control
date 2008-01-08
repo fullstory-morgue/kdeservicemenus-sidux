@@ -9,7 +9,7 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/kdeservicemenus-sidux/trunk/
 
 Package: kdeservicemenus-sidux
 Architecture: all
-Depends: su-me, kate
+Depends: menu, kate
 Description: several kde service menus
  Until now included: 
  - Edit as root
