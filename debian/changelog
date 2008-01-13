@@ -1,8 +1,9 @@
-kdeservicemenus-sidux (0.4.1) UNRELEASED; urgency=low
+kdeservicemenus-sidux (0.4.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix broken quotation.
+  * use kedit, which doesn't prompt for session management.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 08 Jan 2008 16:10:45 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jan 2008 16:08:32 +0100
 
 kdeservicemenus-sidux (0.4.0) unstable; urgency=low
 
