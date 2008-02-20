@@ -1,8 +1,8 @@
-kdeservicemenus-sidux (0.4.3) UNRELEASED; urgency=low
+kdeservicemenus-sidux (0.4.3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * appease lintian and write (C) as © in debian/copyright.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 19 Jan 2008 00:06:21 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Feb 2008 23:18:52 +0100
 
 kdeservicemenus-sidux (0.4.2) unstable; urgency=low
 
