@@ -11,4 +11,4 @@ Name[fr]=Editer en tant que Root
 Name[es]=Editar como Root
 
 Icon=kfm
-Exec=su-to-root -X -c "/usr/bin/kedit %U"
+Exec=su-to-root -X -c "/usr/bin/kwrite %U"
