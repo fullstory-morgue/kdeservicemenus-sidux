@@ -1,3 +1,9 @@
+kdeservicemenus-sidux (0.4.8) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 27 Aug 2008 20:08:45 +0200
+
 kdeservicemenus-sidux (0.4.7) unstable; urgency=low
 
   * edit_as_su.desktop: use kwrite and not kedit, since package depend on kate
