@@ -1,4 +1,4 @@
-kdeservicemenus-sidux (0.4.7) UNRELEASED; urgency=low
+kdeservicemenus-sidux (0.4.7) unstable; urgency=low
 
   * edit_as_su.desktop: use kwrite and not kedit, since package depend on kate
     and kate provides kwrite...
