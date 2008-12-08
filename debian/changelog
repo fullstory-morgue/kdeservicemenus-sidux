@@ -1,9 +1,8 @@
-kdeservicemenus-sidux (0.4.8) UNRELEASED; urgency=low
+kdeservicemenus-sidux (0.4.8) unstable; urgency=low
 
-  * NOT RELEASED YET
   * make lintian happy and depend on ${misc:Depends}.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 02:45:20 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 22:45:42 +0100
 
 kdeservicemenus-sidux (0.4.7) unstable; urgency=low
 
